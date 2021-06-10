@@ -1,7 +1,7 @@
 import Foundation
 
 @objc
-public protocol PianoIDDelegate: class {
+public protocol PianoIDDelegate: AnyObject {
     
     @available(*, deprecated, message: "Implement PianoIDDelegate.signIn") func pianoID(_ pianoID: PianoID, didSignInForToken token: PianoIDToken!, withError error: Error!)
 

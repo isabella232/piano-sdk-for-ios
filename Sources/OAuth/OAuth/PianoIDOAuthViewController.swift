@@ -438,10 +438,10 @@ extension PianoIDOAuthViewController: WKScriptMessageHandler {
         self.code = code
 
         switch oauthProvider.lowercased() {
-        case SocialOAuthProvider.google.description:
-            PianoID.shared.googleSignIn()
-        case SocialOAuthProvider.facebook.description:
-            PianoID.shared.facebookSignIn()
+//        case SocialOAuthProvider.google.description:
+//            PianoID.shared.googleSignIn()
+//        case SocialOAuthProvider.facebook.description:
+//            PianoID.shared.facebookSignIn()
         case SocialOAuthProvider.apple.description:
             if #available(iOS 13.0, *) {
                 PianoID.shared.appleSignIn()

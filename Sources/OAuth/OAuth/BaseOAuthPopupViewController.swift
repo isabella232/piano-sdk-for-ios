@@ -135,7 +135,7 @@ extension BaseOAuthPopupViewController: WKNavigationDelegate {
     }
 }
 
-@objc public protocol PianoOAuthDelegate: class {
+@objc public protocol PianoOAuthDelegate: AnyObject {
     
     func loginSucceeded(accessToken: String)
     
